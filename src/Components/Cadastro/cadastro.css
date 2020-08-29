@@ -1,0 +1,48 @@
+.cadastroPessoa {
+    width: calc(100% - 40px);
+    height: 100%;
+    background: #e4e4e4;
+    display: flex;
+    flex-flow: column;
+    border-left: solid 20px #194759;
+    border-right: solid 20px #194759;
+}
+
+label, input, select {
+    width: auto;
+    margin: 10px 20%;
+}
+
+.botoes {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.botoes button {
+    width: 100px;
+    padding: 5px 0;
+    background: #3e8c84;
+    border: solid 1px #194759;
+    border-radius: 10px;
+    box-shadow: 3px 5px 10px black;
+}
+
+.botoes button:hover {
+    cursor: pointer;
+}
+
+.botoes button:active {
+    box-shadow: 1px 1px 2px black;
+    outline: none;
+}
+
+@media (max-width: 300px) {
+    .botoes {
+        flex-flow: column;
+    }
+
+    .botoes button {
+        margin: 10px 12%;
+    }
+}

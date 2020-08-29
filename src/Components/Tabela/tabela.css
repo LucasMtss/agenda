@@ -1,0 +1,100 @@
+.tabela {
+    grid-area: tabela;
+    width: 90%;
+    height: auto;
+    max-height: 80%;
+    overflow-y: scroll;
+    margin-left: 5%;
+    background: #3e8c84;
+    color: white;
+}
+
+.tabelaExpandida{
+    display: none;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+    flex-flow: column;
+}
+
+.tabelaPessoas {
+    justify-content: space-around;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-flow: column;
+    
+}
+
+.tabelaPessoas thead, .tabelaExpandida thead {
+    background: #31706a;
+    margin-bottom: 15px;
+    height: auto;
+    padding: 15px 0;
+}
+
+.tabelaPessoas thead , .tabelaPessoas tbody, .tabelaExpandida thead, .tabelaExpandida tbody {
+    width: 100%;
+    line-height: 1.5em;
+    display: flex;
+    flex-flow: column;
+
+}
+
+.tabelaPessoas thead tr, .tabelaPessoas tbody tr, .tabelaExpandida thead tr, .tabelaExpandida tbody tr {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.tabelaPessoas thead tr th, .tabelaPessoas tbody tr td, .tabelaPessoas tbody tr button, .tabelaExpandida thead tr th, .tabelaExpandida tbody tr td {
+    margin: 0 auto;
+    text-align: center;
+    justify-self: center;
+    margin-bottom: 5px;
+    width: 30%;
+    word-wrap: break-word;
+    min-width: 50px;
+    /* background: yellow; */
+}
+
+.tabelaPessoas tbody tr button {
+    background: #31706a;
+    border: none;
+    color: white;
+
+}
+
+.tabelaPessoas tbody tr button:hover {
+    cursor: pointer;
+}
+
+
+
+.botaoFechar {
+    width: 20px;
+    height: 20px;
+    color: white;
+    font-weight: bold;
+    background: red;
+    border: solid 1px black;
+    border-radius: 5px;
+    margin: 3px;
+}
+
+.botaoFechar:hover{
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .tabela {
+        overflow: scroll;
+    }
+ 
+    .tabelaPessoas, .tabelaExpandida {
+        min-width: 500px;
+    }
+}
+

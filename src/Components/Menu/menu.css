@@ -1,0 +1,26 @@
+.menu {
+    width: 100;
+    height: 100%;
+    background: #194759;
+    color: #e4e4e4;
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    line-height: 2.0em;
+    align-items: flex-start;
+    padding-left: 40px;
+    grid-area: menu;
+}
+
+.link{
+    text-decoration: none;
+    color: white
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.link:first-child{
+    margin-top: 50%;
+}
